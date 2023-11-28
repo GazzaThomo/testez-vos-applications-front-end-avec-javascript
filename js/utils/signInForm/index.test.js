@@ -68,7 +68,7 @@ describe("SignInForm integration test suites", () => {
     ).not.toHaveClass("hidden");
   });
 
-  it("should not show any error message", () => {
+  it("should not display any error messages since both email and password are correct", () => {
     userEvent.type(
       getByLabelText(document.body, "Votre addresse e-mail"),
       "thomas@facadia.com"
